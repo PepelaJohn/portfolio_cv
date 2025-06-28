@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Pepela - Resume</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-        
+
         @page {
             size: A4;
             margin: 0;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             font-weight: 400;
@@ -31,7 +32,7 @@
             font-size: 14px;
             line-height: 1.5;
         }
-        
+
         .left-column {
             width: 35%;
             background-color: #2c2c2c;
@@ -40,13 +41,13 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         .right-column {
             width: 65%;
             padding: 30px 25px;
             background-color: #f5f5f5;
         }
-        
+
         .profile-photo {
             width: 120px;
             height: 150px;
@@ -54,17 +55,17 @@
             margin-bottom: 20px;
             border: 3px solid white;
         }
-        
+
         .profile-photo img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        
+
         .name-header {
             margin-bottom: 30px;
         }
-        
+
         .name {
             font-family: 'Playfair Display', serif;
             font-size: 36px;
@@ -74,11 +75,11 @@
             margin-bottom: 20px;
             line-height: 1.2;
         }
-        
+
         .contact-info {
             margin-bottom: 30px;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: center;
@@ -86,7 +87,7 @@
             font-size: 13px;
             font-weight: 400;
         }
-        
+
         .contact-icon {
             width: 16px;
             height: 16px;
@@ -97,10 +98,9 @@
             line-height: 16px;
             font-size: 10px;
             border-radius: 2px;
-            filter:grayscale(1)
-            
+            filter: grayscale(1)
         }
-        
+
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 18px;
@@ -110,15 +110,15 @@
             letter-spacing: 1.5px;
             color: white;
         }
-        
+
         .left-section {
             margin-bottom: 30px;
         }
-        
+
         .education-item {
             margin-bottom: 20px;
         }
-        
+
         .education-year {
             font-style: italic;
             font-size: 12px;
@@ -126,61 +126,61 @@
             margin-bottom: 6px;
             color: #cccccc;
         }
-        
+
         .education-degree {
             font-weight: 600;
             font-size: 15px;
             margin-bottom: 4px;
             color: white;
         }
-        
+
         .education-school {
             font-size: 13px;
             font-weight: 300;
             line-height: 1.4;
             color: #e0e0e0;
         }
-        
+
         .skills-list {
             list-style: none;
         }
-        
+
         .skills-list li {
             margin-bottom: 10px;
             font-size: 13px;
             font-weight: 400;
             color: #e8e8e8;
         }
-        
+
         .skills-list li::before {
             content: "●";
             margin-right: 8px;
             color: #ffffff;
             font-weight: 600;
         }
-        
+
         .certifications-list {
             list-style: none;
         }
-        
+
         .certifications-list li {
             margin-bottom: 10px;
             font-size: 13px;
             font-weight: 400;
             color: #e8e8e8;
         }
-        
+
         .certifications-list li::before {
             content: "●";
             margin-right: 8px;
             color: #ffffff;
             font-weight: 600;
         }
-        
+
         .right-section {
             margin-bottom: 25px;
         }
-        
+
         .right-section-title {
             font-family: 'Playfair Display', serif;
             font-size: 20px;
@@ -192,7 +192,7 @@
             border-bottom: 2px solid #2c2c2c;
             padding-bottom: 8px;
         }
-        
+
         .professional-summary {
             font-size: 14px;
             font-weight: 400;
@@ -200,11 +200,11 @@
             text-align: justify;
             color: #4a4a4a;
         }
-        
+
         .experience-item {
             margin-bottom: 25px;
         }
-        
+
         .job-title {
             font-family: 'Playfair Display', serif;
             font-weight: 600;
@@ -212,7 +212,7 @@
             color: #2c2c2c;
             margin-bottom: 4px;
         }
-        
+
         .job-company {
             font-size: 13px;
             font-weight: 400;
@@ -220,7 +220,7 @@
             margin-bottom: 12px;
             font-style: italic;
         }
-        
+
         .job-responsibilities {
             list-style: none;
             font-size: 13px;
@@ -228,13 +228,13 @@
             line-height: 1.6;
             color: #4a4a4a;
         }
-        
+
         .job-responsibilities li {
             margin-bottom: 8px;
             padding-left: 18px;
             position: relative;
         }
-        
+
         .job-responsibilities li::before {
             content: "●";
             position: absolute;
@@ -242,17 +242,17 @@
             color: #2c2c2c;
             font-weight: 600;
         }
-        
+
         .references-section {
             font-size: 14px;
             font-weight: 400;
             color: #4a4a4a;
         }
-        
+
         .reference-item {
             margin-bottom: 18px;
         }
-        
+
         .reference-name {
             font-family: 'Playfair Display', serif;
             font-weight: 600;
@@ -260,32 +260,32 @@
             margin-bottom: 4px;
             color: #2c2c2c;
         }
-        
+
         .reference-title {
             font-size: 13px;
             font-weight: 400;
             margin-bottom: 4px;
             color: #666;
         }
-        
+
         .reference-contact {
             font-size: 12px;
             font-weight: 300;
             color: #888;
         }
-        
+
         .website-list {
             list-style: none;
             font-size: 13px;
             font-weight: 400;
         }
-        
+
         .website-list li {
             margin-bottom: 8px;
             padding-left: 18px;
             position: relative;
         }
-        
+
         .website-list li::before {
             content: "●";
             position: absolute;
@@ -293,28 +293,31 @@
             color: #2c2c2c;
             font-weight: 600;
         }
-        
+
         @media print {
             body {
                 width: 210mm;
                 margin: 0;
             }
-            
-            .left-column, .right-column {
+
+            .left-column,
+            .right-column {
                 break-inside: avoid;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="left-column">
         <div class="profile-photo">
             <!-- Profile photo placeholder - you can add your actual photo here -->
-            <div style="width: 100%; height: 100%; background-color: #ddd; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666;">
+            <div
+                style="width: 100%; height: 100%; background-color: #ddd; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666;">
                 <img src="./passportphoto.jpg" alt="">
             </div>
         </div>
-        
+
         <div class="left-section">
             <h2 class="section-title">Education</h2>
             <div class="education-item">
@@ -328,7 +331,7 @@
                 <div class="education-school">High School Diploma</div>
             </div>
         </div>
-        
+
         <div class="left-section">
             <h2 class="section-title">Skills</h2>
             <ul class="skills-list">
@@ -340,7 +343,7 @@
                 <li>Communication</li>
             </ul>
         </div>
-        
+
         <div class="left-section">
             <h2 class="section-title">Certifications</h2>
             <ul class="certifications-list">
@@ -351,7 +354,7 @@
             </ul>
         </div>
     </div>
-    
+
     <div class="right-column">
         <div class="name-header">
             <h1 class="name">JOHN PEPELA</h1>
@@ -370,59 +373,58 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="right-section">
             <h2 class="right-section-title">Professional Summary</h2>
             <p class="professional-summary">
-                Aerospace engineering student with a strong foundation in mathematics and hands-on experience in technical systems, STEM outreach and hands-on learning. In addition to formal training in design, mechanical and aerospace systems, I have independently garnered sufficient knowledge in astronomy. I have independently conducted astronomy awareness sessions on informal settings. I am passionate about passing the knowledge of the universe to diverse audiences.
+                Aerospace engineer with a strong interest in aviation, astronomy, and astrophysics. Experienced in
+                technical systems, STEM outreach and hands-on learning. In addition to formal training in aviation,
+                mechanical and aerospace systems, I have independently garnered sufficient knowledge in astronomy and conducted related events on informal settings. 
             </p>
         </div>
-        
+
         <div class="right-section">
             <h2 class="right-section-title">Experience</h2>
-            
+
             <div class="experience-item">
                 <div class="job-title">Technical Lead</div>
-                <div class="job-company">Saltic International Limited |  Karen, Nairobi</div>
+                <div class="job-company">Saltic International Limited | Karen, Nairobi</div>
                 <ul class="job-responsibilities">
-                    <li>Led cross-functional teams in the design and implementation of scalable software solutions for financial systems, ensuring high availability and reliability.</li>
-                    <li>Developed and executed project plans utilizing Agile methodologies, ensuring timely delivery of high-quality software solutions.</li>
-                    <li>Mentored developers in best coding practices and efficient problem-solving techniques.</li>
-                    <li>Created a culture of continuous learning and improvement.</li>
-                    <li>Collaborated with business stakeholders to understand requirements and maintain and improve overall code quality within the organization.</li>
+                    
+                    <li>Developed and executed project plans utilizing Agile methodologies, ensuring timely delivery of
+                        high-quality software solutions.</li>
+                   
+                    <li>Conducted code reviews and provided constructive feedback to maintain coding standards and
+                        improve overall code quality within the team.</li>
                 </ul>
             </div>
-            
+
             <div class="experience-item">
-                <div class="job-title">04/2023 - Present</div>
-                <div class="job-company">CAD Designer</div>
-                <div class="job-company">Freelance |  Karen, Nairobi</div>
+                <div class="job-title"> CAD Designer | 04/2023 - Present  </div>
+                <div class="job-company">Freelance | Karen, Nairobi</div>
                 <ul class="job-responsibilities">
                     <li>Developed 3D component models for mechanical and aerospace-related projects.</li>
                     <li>Enhanced communication and problem-solving skills through client collaboration.</li>
                 </ul>
             </div>
-            
+
             <div class="experience-item">
-                <div class="job-title">05/2022 - 03/2023</div>
-                <div class="job-company">Aeronautical Engineering Intern</div>
-                <div class="job-company">Safik Aviation Ltd |  Wilson Airport, Nairobi</div>
+                <div class="job-title">Aeronautical Engineering Intern | 05/2022 - 03/2023</div>
+                <div class="job-company">Solid-Horizon Ltd | Wilson Airport, Nairobi</div>
                 <ul class="job-responsibilities">
-                    <li>Assisted in scheduled maintenance of general aviation aircraft (Cessna 172-206).</li>
-                    <li>Worked under licensed engineers on engines, airframes and avionics systems.</li>
-                    <li>Built teamwork and operational discipline, applicable to equipment operation and guest engagement.</li>
+                    <li>Assisted in scheduled maintenance of general aviation aircraft (Cessna 172–206).</li>
+                    <li>
+                        Worked under licensed engineers on engines, airframes and avionics systems.
+
+                    </li>
+                    
+
                 </ul>
             </div>
         </div>
+
         
-        <div class="right-section">
-            <h2 class="right-section-title">Website, Portfolio and Profiles</h2>
-            <ul class="website-list">
-                <li>https://www.linkedin.com/in/pepelajohn</li>
-                <li>www.pepelajohn.site</li>
-            </ul>
-        </div>
-        
+
         <div class="right-section">
             <h2 class="right-section-title">References</h2>
             <div class="references-section">
@@ -436,4 +438,5 @@
         </div>
     </div>
 </body>
+
 </html>
